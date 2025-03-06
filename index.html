@@ -1,40 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="nl">
 <head>
 <link rel="meta" href="#me" />
-<script type="text/turtle" id="me">
-@prefix ex: <https://example.org/> .
-@prefix foaf: <http://xmlns.com/foaf/0.1/> .
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-@prefix wd: <http://www.wikidata.org/entity/> .
-
-ex:GuyCools a foaf:Person , foaf:Agent ;
-        foaf:name "Guy Cools"^^xsd:string ;
-        foaf:birthday "1973-05-09"^^xsd:date ;
-        foaf:gender "man"@nl ;
-        foaf:Project "Open Vlacc"^^xsd:string ;
-        foaf:based_near wd:Q1296 ;
-        foaf:img "https://www.cultuurconnect.be/sites/default/files/styles/teamlid_teaser/public/2022-09/CC-portretten_%28c%29theuntold%20%2895%20van%20150%29.jpg"^^rdf:HTML ;
-        foaf:knows [
-                foaf:name "Lynn Van Kerckhove"
-                ] ,
-                [ 
-                foaf:name "Erwin Geeraerts"
-                ] .
-
-ex:CC a foaf:Organization ;
-        foaf:name "Cultuurconnect"^^xsd:string ;
-        foaf:member ex:GuyCools .
-
-ex:CourseKG25 a foaf:Group ;
-        foaf:name "Knowledge Graphs 2024-2025"^^xsd:string ;
-        foaf:member ex:GuyCools .
-</script>
 <script type="application/ld+json" id="me">
 {
     "@context": {
-      "foaf": "http://xmlns.com/foaf/0.1/",
+      "schema": "http://schema.org/",
+	  "foaf": "http://xmlns.com/foaf/0.1/",
       "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
       "xsd": "http://www.w3.org/2001/XMLSchema#",
       "wd": "http://www.wikidata.org/entity/"
@@ -46,7 +18,7 @@ ex:CourseKG25 a foaf:Group ;
           "foaf:Person",
           "foaf:Agent"
         ],
-        "foaf:name": {
+        "schema:name": {
           "@value": "Guy Cools",
           "@type": "xsd:string"
         },
@@ -58,6 +30,15 @@ ex:CourseKG25 a foaf:Group ;
           "@value": "man",
           "@language": "nl"
         },
+		"schema:worksFor": {
+          "@id":"https://www.cultuurconnect.be/",
+          "@type": "http://schema.org/Organization",
+          "name": "Cultuurconnect"
+        },
+		"schema:jobTitle": {
+		  "name": "Domeinexpert Systeemoverschrijdende metadata",
+		  "@type": "Text"
+		},
         "foaf:Project": {
           "@value": "Open Vlacc",
           "@type": "xsd:string"
@@ -69,6 +50,10 @@ ex:CourseKG25 a foaf:Group ;
           "@value": "https://www.cultuurconnect.be/sites/default/files/styles/teamlid_teaser/public/2022-09/CC-portretten_%28c%29theuntold%20%2895%20van%20150%29.jpg",
           "@type": "rdf:HTML"
         },
+		"schema:CourseInstance": {
+		  "description": "Knowledge Graphs 2024-2025",
+		  "@id": "https://pietercolpaert.be/teaching/kg/#2024-2025"
+		},
         "foaf:knows": [
           {
             "foaf:name": "Lynn Van Kerckhove"
@@ -77,28 +62,6 @@ ex:CourseKG25 a foaf:Group ;
             "foaf:name": "Erwin Geeraerts"
           }
         ]
-      },
-      {
-        "@id": "https://www.cultuurconnect.be/#about",
-        "@type": "foaf:Organization",
-        "foaf:name": {
-          "@value": "Cultuurconnect",
-          "@type": "xsd:string"
-        },
-        "foaf:member": {
-          "@id": "https://gc-cc.github.io/#me"
-        }
-      },
-      {
-        "@id": "https://pietercolpaert.be/teaching/kg/#2024-2025",
-        "@type": "foaf:Group",
-        "foaf:name": {
-          "@value": "Knowledge Graphs 2024-2025",
-          "@type": "xsd:string"
-        },
-        "foaf:member": {
-          "@id": "https://gc-cc.github.io/#me"
-        }
       }
     ]
   }
