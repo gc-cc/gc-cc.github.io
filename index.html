@@ -1,5 +1,36 @@
 <!DOCTYPE html>
 <html>
+<head>
+<script type="text/turtle">
+@prefix ex: <https://example.org/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix wd: <http://www.wikidata.org/entity/> .
+
+ex:GuyCools a foaf:Person , foaf:Agent ;
+        foaf:name "Guy Cools"^^xsd:string ;
+        foaf:birthday "1973-05-09"^^xsd:date ;
+        foaf:gender "man"@nl ;
+        foaf:Project "Open Vlacc"^^xsd:string ;
+        foaf:based_near wd:Q1296 ;
+        foaf:img "https://www.cultuurconnect.be/sites/default/files/styles/teamlid_teaser/public/2022-09/CC-portretten_%28c%29theuntold%20%2895%20van%20150%29.jpg"^^rdf:HTML ;
+        foaf:knows [
+                foaf:name "Lynn Van Kerckhove"
+                ] ,
+                [ 
+                foaf:name "Erwin Geeraerts"
+                ] .
+
+ex:CC a foaf:Organization ;
+        foaf:name "Cultuurconnect"^^xsd:string ;
+        foaf:member ex:GuyCools .
+
+ex:CourseKG25 a foaf:Group ;
+        foaf:name "Knowledge Graphs 2024-2025"^^xsd:string ;
+        foaf:member ex:GuyCools .
+</script>
+</head>
 <body>
 <h1>Hello World</h1>
 <p>I'm hosted with GitHub Pages.</p>
