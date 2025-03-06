@@ -34,7 +34,6 @@ ex:CourseKG25 a foaf:Group ;
 <script type="application/ld+json" id="me">
 {
     "@context": {
-      "ex": "https://example.org/",
       "foaf": "http://xmlns.com/foaf/0.1/",
       "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
       "xsd": "http://www.w3.org/2001/XMLSchema#",
@@ -42,7 +41,7 @@ ex:CourseKG25 a foaf:Group ;
     },
     "@graph": [
       {
-        "@id": "ex:GuyCools",
+        "@id": "https://gc-cc.github.io/#me",
         "@type": [
           "foaf:Person",
           "foaf:Agent"
@@ -80,25 +79,25 @@ ex:CourseKG25 a foaf:Group ;
         ]
       },
       {
-        "@id": "ex:CC",
+        "@id": "https://www.cultuurconnect.be/#about",
         "@type": "foaf:Organization",
         "foaf:name": {
           "@value": "Cultuurconnect",
           "@type": "xsd:string"
         },
         "foaf:member": {
-          "@id": "ex:GuyCools"
+          "@id": "https://gc-cc.github.io/#me"
         }
       },
       {
-        "@id": "ex:CourseKG25",
+        "@id": "https://pietercolpaert.be/teaching/kg/#2024-2025",
         "@type": "foaf:Group",
         "foaf:name": {
           "@value": "Knowledge Graphs 2024-2025",
           "@type": "xsd:string"
         },
         "foaf:member": {
-          "@id": "ex:GuyCools"
+          "@id": "https://gc-cc.github.io/#me"
         }
       }
     ]
