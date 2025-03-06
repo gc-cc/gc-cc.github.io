@@ -31,6 +31,79 @@ ex:CourseKG25 a foaf:Group ;
         foaf:name "Knowledge Graphs 2024-2025"^^xsd:string ;
         foaf:member ex:GuyCools .
 </script>
+<script type="application/ld+json" id="me">
+{
+    "@context": {
+      "ex": "https://example.org/",
+      "foaf": "http://xmlns.com/foaf/0.1/",
+      "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "wd": "http://www.wikidata.org/entity/"
+    },
+    "@graph": [
+      {
+        "@id": "ex:GuyCools",
+        "@type": [
+          "foaf:Person",
+          "foaf:Agent"
+        ],
+        "foaf:name": {
+          "@value": "Guy Cools",
+          "@type": "xsd:string"
+        },
+        "foaf:birthday": {
+          "@value": "1973-05-09",
+          "@type": "xsd:date"
+        },
+        "foaf:gender": {
+          "@value": "man",
+          "@language": "nl"
+        },
+        "foaf:Project": {
+          "@value": "Open Vlacc",
+          "@type": "xsd:string"
+        },
+        "foaf:based_near": {
+          "@id": "wd:Q1296"
+        },
+        "foaf:img": {
+          "@value": "https://www.cultuurconnect.be/sites/default/files/styles/teamlid_teaser/public/2022-09/CC-portretten_%28c%29theuntold%20%2895%20van%20150%29.jpg",
+          "@type": "rdf:HTML"
+        },
+        "foaf:knows": [
+          {
+            "foaf:name": "Lynn Van Kerckhove"
+          },
+          {
+            "foaf:name": "Erwin Geeraerts"
+          }
+        ]
+      },
+      {
+        "@id": "ex:CC",
+        "@type": "foaf:Organization",
+        "foaf:name": {
+          "@value": "Cultuurconnect",
+          "@type": "xsd:string"
+        },
+        "foaf:member": {
+          "@id": "ex:GuyCools"
+        }
+      },
+      {
+        "@id": "ex:CourseKG25",
+        "@type": "foaf:Group",
+        "foaf:name": {
+          "@value": "Knowledge Graphs 2024-2025",
+          "@type": "xsd:string"
+        },
+        "foaf:member": {
+          "@id": "ex:GuyCools"
+        }
+      }
+    ]
+  }
+</script>
 </head>
 <body>
 <h1>Hello World</h1>
