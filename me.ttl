@@ -14,7 +14,11 @@
         foaf:Project "Open Vlacc"^^xsd:string ;
         foaf:based_near wd:Q1296 ;
         foaf:img "https://www.cultuurconnect.be/sites/default/files/styles/teamlid_teaser/public/2022-09/CC-portretten_%28c%29theuntold%20%2895%20van%20150%29.jpg"^^rdf:HTML ;
-		foaf:knows <https://lynnvkerckhove.github.io/graphPub/docs/LynnVK.ttl#me> , <https://tobiashendrickx.be/about#me> , <http://lippelo.me/#erwin.geeraerts> , <https://users.ugent.be/~eadleers/> .
+		foaf:knows <https://lynnvkerckhove.github.io/graphPub/docs/LynnVK.ttl#me> , 
+				   <https://lynnvkerckhove.github.io/graphPub/#me> , 
+				   <https://tobiashendrickx.be/about#me> , 
+				   <http://lippelo.me/#erwin.geeraerts> , 
+				   <https://users.ugent.be/~eadleers/> .
 
 <https://pietercolpaert.be/teaching/kg/#2024-2025> a foaf:Group ;
         foaf:name "Knowledge Graphs 2024-2025"^^xsd:string ;
