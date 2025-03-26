@@ -16,10 +16,6 @@ gc:Person a owl:Class ;
     rdfs:label "Person" ;
     rdfs:comment "A person represented in the photo." .
 
-gc:Colour a owl:Class ;
-    rdfs:label "Colour" ;
-    rdfs:comment "A primary colour associated with the Cultuurconnect 'C'." .
-
 gc:Location a owl:Class ;
     rdfs:label "Location" ;
     rdfs:comment "A place where the photo was taken." .
@@ -50,7 +46,7 @@ gc:hasPrimaryColour a rdf:Property ;
     rdfs:label "has primary colour" ;
     rdfs:comment "Defines the main colour of the Cultuurconnect 'C' in the photo." ;
     rdfs:domain gc:Photo ;
-    rdfs:range gc:Colour .
+    rdfs:range xsd:string .
 
 gc:wasTakenAt a rdf:Property ;
     rdfs:label "was taken at" ;

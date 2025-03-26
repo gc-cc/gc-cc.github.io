@@ -3,7 +3,7 @@
 <https://www.cultuurconnect.be/sites/default/files/styles/teamlid_teaser/public/2022-09/CC-portretten_%28c%29theuntold%20%2895%20van%20150%29.jpg> <gc:isDoctype> "Photo ID" ;
 			<gc:title> "Guy met C" ;
 			<gc:represents> <https://gc-cc.github.io/me.ttl#me> ;
-			<gc:hasPrimaryColour> <geel> ;
+			<gc:hasPrimaryColour> "geel" ;
 			<gc:wasTakenAt> <https://www.wikidata.org/wiki/Q12992> ; # Oudenaarde
 			<gc:wasTakenBy> <https://theuntold.be/index.php/over-mij/> ; # The Untold
 			<gc:description> "Foto van Guy Cools die de 'C' van Cultuurconnect (gele versie) vasthoudt, ter identificatie op de organisatiewebsite." .
@@ -11,7 +11,7 @@
 <https://www.cultuurconnect.be/sites/default/files/styles/teamlid_teaser/public/2023-11/CC-portretten_%28c%29theuntold%20%28107%20van%20150%29.jpg> <gc:isDoctype> "Photo ID" ;
 			<gc:title> "Lynn met C" ;
 			<gc:represents> <https://lynnvkerckhove.github.io/graphPub/docs/LynnVK.ttl#me> ;
-			<gc:hasPrimaryColour> <rood> ;
+			<gc:hasPrimaryColour> "rood" ;
 			<gc:wasTakenAt> <https://www.wikidata.org/wiki/Q239> ; # Brussel
 			<gc:wasTakenBy> <https://theuntold.be/index.php/over-mij/> ; # The Untold
 			<gc:description> "Foto van Lynn Van Kerckhove die de 'C' van Cultuurconnect (rode versie) vasthoudt, ter identificatie op de organisatiewebsite." .
