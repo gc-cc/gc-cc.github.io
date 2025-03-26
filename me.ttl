@@ -8,11 +8,18 @@
         foaf:name "Guy Cools"^^xsd:string ;
         foaf:birthday "1973-05-09"^^xsd:date ;
         foaf:gender "male"@en ;
-		schema:worksFor "Cultuurconnect"^^xsd:string , "https://www.cultuurconnect.be"^^rdf:HTML ;
+		schema:worksFor [ 
+			a schema:Organization ;
+			schema:name "Cultuurconnect"^^xsd:string ;
+			schema:url <http://www.cultuurconnect.be> 
+		] ;
 		schema:jobTitle "Domeinexpert Systeemoverschrijdende metadata"^^xsd:string ;
-        foaf:Project "Open Vlacc"^^xsd:string ;
+        foaf:currentProject "Open Vlacc"^^xsd:string ;
         foaf:based_near wd:Q1296 ;
-        foaf:img "https://www.cultuurconnect.be/sites/default/files/styles/teamlid_teaser/public/2022-09/CC-portretten_%28c%29theuntold%20%2895%20van%20150%29.jpg"^^rdf:HTML ;
+        foaf:img [ 
+			a foaf:Image ; 
+			schema:url <https://www.cultuurconnect.be/sites/default/files/styles/teamlid_teaser/public/2022-09/CC-portretten_%28c%29theuntold%20%2895%20van%20150%29.jpg> 
+		] ;
 		foaf:knows <https://lynnvkerckhove.github.io/graphPub/docs/LynnVK.ttl#me> , 
 				   <http://lippelo.me/me.ttl> , 
 				   <https://tobiashendrickx.be/about#me> .
