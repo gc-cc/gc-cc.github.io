@@ -14,4 +14,4 @@
 			gc:hasPrimaryColour "rood"@nl ;
 			gc:wasTakenAt <https://www.wikidata.org/wiki/Q239> ; # Brussel
 			gc:wasTakenBy <https://theuntold.be/index.php/over-mij/> ; # The Untold
-			gc:description "Foto van Lynn Van Kerckhove die de 'C' van Cultuurconnect (rode versie) vasthoudt, ter identificatie op de organisatiewebsite."#nl .
+			gc:description "Foto van Lynn Van Kerckhove die de 'C' van Cultuurconnect (rode versie) vasthoudt, ter identificatie op de organisatiewebsite."@nl .
