@@ -1,4 +1,4 @@
-@prefix gc: <https://gc-cc.github.io/ontology_GuyCools.ttl> .
+@prefix gc: <https://gc-cc.github.io/ontology-GuyCools.ttl> .
 
 <https://www.cultuurconnect.be/sites/default/files/styles/teamlid_teaser/public/2022-09/CC-portretten_%28c%29theuntold%20%2895%20van%20150%29.jpg> <gc:isDoctype> "Photo ID" ;
 			<gc:title> "Guy met C" ;

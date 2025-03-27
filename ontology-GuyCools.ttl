@@ -1,11 +1,11 @@
-@prefix gc: <https://gc-cc.github.io/ontology_GuyCools.ttl#> .
+@prefix gc: <https://gc-cc.github.io/ontology-GuyCools.ttl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
 
-<https://gc-cc.github.io/ontology_GuyCools.ttl> a owl:Ontology ;
+<https://gc-cc.github.io/ontology-GuyCools.ttl> a owl:Ontology ;
     rdfs:label "Guy Cools Ontology" ;
     rdfs:comment "An ontology describing photos of individuals holding the 'C' of Cultuurconnect, now connected to FOAF." ;
     owl:versionInfo "1.1" .
