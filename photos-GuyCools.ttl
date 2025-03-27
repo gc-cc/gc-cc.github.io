@@ -1,17 +1,17 @@
 @prefix gc: <https://gc-cc.github.io/ontology-GuyCools.ttl#> .
 
 <https://www.cultuurconnect.be/sites/default/files/styles/teamlid_teaser/public/2022-09/CC-portretten_%28c%29theuntold%20%2895%20van%20150%29.jpg> a <gc:PhotoId> ;
-			<gc:title> "Guy met C"@nl ;
-			<gc:represents> <https://gc-cc.github.io/me.ttl#me> ;
-			<gc:hasPrimaryColour> "geel"@nl ;
-			<gc:wasTakenAt> <https://www.wikidata.org/wiki/Q12992> ; # Oudenaarde
-			<gc:wasTakenBy> <https://theuntold.be/index.php/over-mij/> ; # The Untold
-			<gc:description> "Foto van Guy Cools die de 'C' van Cultuurconnect (gele versie) vasthoudt, ter identificatie op de organisatiewebsite."@nl .
+			gc:title "Guy met C"@nl ;
+			gc:represents <https://gc-cc.github.io/me.ttl#me> ;
+			gc:hasPrimaryColour "geel"@nl ;
+			gc:wasTakenAt <https://www.wikidata.org/wiki/Q12992> ; # Oudenaarde
+			gc:wasTakenBy <https://theuntold.be/index.php/over-mij/> ; # The Untold
+			gc:description "Foto van Guy Cools die de 'C' van Cultuurconnect (gele versie) vasthoudt, ter identificatie op de organisatiewebsite."@nl .
 
 <https://www.cultuurconnect.be/sites/default/files/styles/teamlid_teaser/public/2023-11/CC-portretten_%28c%29theuntold%20%28107%20van%20150%29.jpg> a <gc:PhotoId> ;
-			<gc:title> "Lynn met C"@nl ;
-			<gc:represents> <https://lynnvkerckhove.github.io/graphPub/docs/LynnVK.ttl#me> ;
-			<gc:hasPrimaryColour> "rood"@nl ;
-			<gc:wasTakenAt> <https://www.wikidata.org/wiki/Q239> ; # Brussel
-			<gc:wasTakenBy> <https://theuntold.be/index.php/over-mij/> ; # The Untold
-			<gc:description> "Foto van Lynn Van Kerckhove die de 'C' van Cultuurconnect (rode versie) vasthoudt, ter identificatie op de organisatiewebsite."#nl .
+			gc:title "Lynn met C"@nl ;
+			gc:represents <https://lynnvkerckhove.github.io/graphPub/docs/LynnVK.ttl#me> ;
+			gc:hasPrimaryColour "rood"@nl ;
+			gc:wasTakenAt <https://www.wikidata.org/wiki/Q239> ; # Brussel
+			gc:wasTakenBy <https://theuntold.be/index.php/over-mij/> ; # The Untold
+			gc:description "Foto van Lynn Van Kerckhove die de 'C' van Cultuurconnect (rode versie) vasthoudt, ter identificatie op de organisatiewebsite."#nl .
