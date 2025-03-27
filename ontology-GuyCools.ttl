@@ -3,26 +3,32 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
 
 <https://gc-cc.github.io/ontology_GuyCools.ttl> a owl:Ontology ;
     rdfs:label "Guy Cools Ontology" ;
-    rdfs:comment "An ontology describing photos of individuals holding the 'C' of Cultuurconnect." .
+    rdfs:comment "An ontology describing photos of individuals holding the 'C' of Cultuurconnect, now connected to FOAF." ;
+    owl:versionInfo "1.1" .
 
 gc:Photo a owl:Class ;
     rdfs:label "Photo" ;
-    rdfs:comment "A photographic representation of a person holding the 'C' of Cultuurconnect." .
+    rdfs:comment "A photographic representation of a person holding the 'C' of Cultuurconnect." ;
+    rdfs:subClassOf foaf:Image .
 
 gc:Person a owl:Class ;
     rdfs:label "Person" ;
-    rdfs:comment "A person represented in the photo." .
+    rdfs:comment "A person represented in the photo." ;
+	owl:sameAs foaf:Person .
 
 gc:Location a owl:Class ;
     rdfs:label "Location" ;
-    rdfs:comment "A place where the photo was taken." .
+    rdfs:comment "A place where the photo was taken." ;
+    rdfs:subClassOf foaf:SpatialThing .
 
 gc:Photographer a owl:Class ;
     rdfs:label "Photographer" ;
-    rdfs:comment "The person or company who took the photo." .
+    rdfs:comment "The person or company who took the photo." ;
+    rdfs:subClassOf foaf:Agent .
 
 gc:isDoctype a rdf:Property ;
     rdfs:label "is doctype" ;
@@ -34,34 +40,40 @@ gc:title a rdf:Property ;
     rdfs:label "title" ;
     rdfs:comment "The title of the photo." ;
     rdfs:domain gc:Photo ;
-    rdfs:range xsd:string .
+    rdfs:range xsd:string ;
+	owl:sameAs foaf:name .	
 
 gc:represents a rdf:Property ;
     rdfs:label "represents" ;
     rdfs:comment "Indicates the person represented in the photo." ;
     rdfs:domain gc:Photo ;
-    rdfs:range gc:Person .
+    rdfs:range gc:Person ;
+	owl:sameAs foaf:depiction .
 
 gc:hasPrimaryColour a rdf:Property ;
     rdfs:label "has primary colour" ;
     rdfs:comment "Defines the main colour of the Cultuurconnect 'C' in the photo." ;
     rdfs:domain gc:Photo ;
-    rdfs:range xsd:string .
+    rdfs:range xsd:string ;
+    rdfs:subPropertyOf foaf:primaryTopic .
 
 gc:wasTakenAt a rdf:Property ;
     rdfs:label "was taken at" ;
     rdfs:comment "Specifies the location where the photo was taken." ;
     rdfs:domain gc:Photo ;
-    rdfs:range gc:Location .
+    rdfs:range gc:Location ;
+    rdfs:subPropertyOf foaf:based_near .
 
 gc:wasTakenBy a rdf:Property ;
     rdfs:label "was taken by" ;
     rdfs:comment "Identifies the photographer of the photo." ;
     rdfs:domain gc:Photo ;
-    rdfs:range gc:Photographer .
+    rdfs:range gc:Photographer ;
+	owl:sameAs foaf:maker .
 
 gc:description a rdf:Property ;
     rdfs:label "description" ;
     rdfs:comment "A textual description of the photo." ;
     rdfs:domain gc:Photo ;
-    rdfs:range xsd:string .
+    rdfs:range xsd:string ;
+	owl:sameAs foaf:description .
