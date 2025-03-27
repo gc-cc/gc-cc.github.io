@@ -2,72 +2,71 @@
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
 
 <https://gc-cc.github.io/ontology-GuyCools.ttl> a owl:Ontology ;
-    rdfs:label "Guy Cools Ontology" ;
-    rdfs:comment "An ontology describing photos of individuals holding the 'C' of Cultuurconnect, now connected to FOAF." ;
-    owl:versionInfo "1.1" .
+    rdfs:label "Guy Cools Ontology"@en ;
+    rdfs:comment "An ontology describing photos of individuals holding the 'C' of Cultuurconnect, now connected to FOAF."@en ;
+    owl:versionInfo "1.2" .
 
 gc:PhotoId a owl:Class ;
-    rdfs:label "Photo ID" ;
-    rdfs:comment "A photographic representation of a person holding the 'C' of Cultuurconnect." ;
+    rdfs:label "Photo ID"@en ;
+    rdfs:comment "A photographic representation of a person holding the 'C' of Cultuurconnect."@en ;
     rdfs:subClassOf foaf:Image .
 
 gc:Person a owl:Class ;
-    rdfs:label "Person" ;
-    rdfs:comment "A person represented in the photo." ;
+    rdfs:label "Person"@en ;
+    rdfs:comment "A person represented in the photo."@en ;
 	owl:equivalentClass foaf:Person .
 
 gc:Location a owl:Class ;
-    rdfs:label "Location" ;
-    rdfs:comment "A place where the photo was taken." ;
+    rdfs:label "Location"@en ;
+    rdfs:comment "A place where the photo was taken."@en ;
     rdfs:subClassOf foaf:SpatialThing .
 
 gc:Photographer a owl:Class ;
-    rdfs:label "Photographer" ;
-    rdfs:comment "The person or company who took the photo." ;
+    rdfs:label "Photographer"@en ;
+    rdfs:comment "The person or company who took the photo."@en ;
     rdfs:subClassOf foaf:Agent .
 
-gc:title a rdf:Property ;
-    rdfs:label "title" ;
-    rdfs:comment "The title of the photo." ;
+gc:title a rdf:Property, owl:DataProperty ;
+    rdfs:label "title"@en ;
+    rdfs:comment "The title of the photo."@en ;
     rdfs:domain gc:PhotoId ;
-    rdfs:range xsd:string ;
-	owl:equivalentProperty foaf:name .	
+    rdfs:range rdfs:Literal ;
+	owl:equivalentProperty foaf:name .
 
-gc:represents a rdf:Property ;
-    rdfs:label "represents" ;
-    rdfs:comment "Indicates the person represented in the photo." ;
+gc:represents a rdf:Property, owl:ObjectProperty ;
+    rdfs:label "represents"@en ;
+    rdfs:comment "Indicates the person represented in the photo."@en ;
     rdfs:domain gc:PhotoId ;
     rdfs:range gc:Person ;
 	owl:equivalentProperty foaf:depiction .
 
-gc:hasPrimaryColour a rdf:Property ;
-    rdfs:label "has primary colour" ;
-    rdfs:comment "Defines the main colour of the Cultuurconnect 'C' in the photo." ;
+gc:hasPrimaryColour a rdf:Property, owl:ObjectProperty ;
+    rdfs:label "has primary colour"@en ;
+    rdfs:comment "Defines the main colour of the Cultuurconnect 'C' in the photo."@en ;
     rdfs:domain gc:PhotoId ;
-    rdfs:range xsd:string ;
+    rdfs:range rdfs:Literal ;
     rdfs:subPropertyOf foaf:primaryTopic .
 
-gc:wasTakenAt a rdf:Property ;
-    rdfs:label "was taken at" ;
-    rdfs:comment "Specifies the location where the photo was taken." ;
+gc:wasTakenAt a rdf:Property, owl:ObjectProperty ;
+    rdfs:label "was taken at"@en ;
+    rdfs:comment "Specifies the location where the photo was taken."@en ;
     rdfs:domain gc:PhotoId ;
     rdfs:range gc:Location ;
     rdfs:subPropertyOf foaf:based_near .
 
-gc:wasTakenBy a rdf:Property ;
-    rdfs:label "was taken by" ;
-    rdfs:comment "Identifies the photographer of the photo." ;
+gc:wasTakenBy a rdf:Property, owl:ObjectProperty ;
+    rdfs:label "was taken by"@en ;
+    rdfs:comment "Identifies the photographer of the photo."@en ;
     rdfs:domain gc:PhotoId ;
     rdfs:range gc:Photographer ;
 	owl:equivalentProperty foaf:maker .
 
-gc:description a rdf:Property ;
-    rdfs:label "description" ;
-    rdfs:comment "A textual description of the photo." ;
+gc:description a rdf:Property, owl:DataProperty ;
+    rdfs:label "description"@en ;
+    rdfs:comment "A textual description of the photo."@en ;
     rdfs:domain gc:PhotoId ;
-    rdfs:range xsd:string ;
+    rdfs:range rdfs:Literal ;
 	owl:equivalentProperty foaf:description .
