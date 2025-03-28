@@ -41,7 +41,7 @@ gc:represents a rdf:Property, owl:ObjectProperty ;
     rdfs:comment "Indicates the person represented in the photo."@en ;
     rdfs:domain gc:PhotoId ;
     rdfs:range gc:Person ;
-	owl:equivalentProperty foaf:depiction .
+	owl:equivalentProperty foaf:depicts .
 
 gc:hasPrimaryColour a rdf:Property, owl:ObjectProperty ;
     rdfs:label "has primary colour"@en ;
