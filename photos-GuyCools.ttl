@@ -16,6 +16,14 @@
 			gc:wasTakenBy <https://theuntold.be/index.php/over-mij/> ; # The Untold
 			gc:description "Foto van Lynn Van Kerckhove die de 'C' van Cultuurconnect (rode versie) vasthoudt, ter identificatie op de organisatiewebsite."@nl .
 
+<https://www.cultuurconnect.be/sites/default/files/styles/full_width/public/2023-12/BibHerzele_%28c%29theuntold%20%28129%20van%20202%29_0.jpg> a gc:PhotoId ;
+			gc:title "Bibliotheek Herzele"@nl ;
+			gc:represents <https://herzele.bibliotheek.be/adres-en-openingsuren> ;
+			gc:hasPrimaryColour "beige"@nl ;
+			gc:wasTakenAt <https://www.wikidata.org/wiki/Q587979> ; # Herzele
+			gc:wasTakenBy <https://theuntold.be/index.php/over-mij/> ; # The Untold
+			gc:description "Foto van de bibliotheek van Herzele, ter identificatie van het project Vernieuwing invoermodel en -systeem centrale catalografie op de organisatiewebsite."@nl .
+
 <https://theuntold.be/index.php/over-mij/> a gc:Photographer ;
 			gc:name "The Untold" .
 
@@ -24,3 +32,6 @@
 
 <https://lynnvkerckhove.github.io/graphPub/docs/LynnVK.ttl#me> a gc:Person ;
 			gc:name "Lynn Van Kerckhove" .
+
+<https://herzele.bibliotheek.be/adres-en-openingsuren> a gc:Library ;
+			gc:name "De Wattenfabriek" .
