@@ -15,3 +15,12 @@
 			gc:wasTakenAt <https://www.wikidata.org/wiki/Q239> ; # Brussel
 			gc:wasTakenBy <https://theuntold.be/index.php/over-mij/> ; # The Untold
 			gc:description "Foto van Lynn Van Kerckhove die de 'C' van Cultuurconnect (rode versie) vasthoudt, ter identificatie op de organisatiewebsite."@nl .
+
+<https://theuntold.be/index.php/over-mij/> a gc:Photographer ;
+			gc:name "The Untold" .
+
+<https://gc-cc.github.io/me.ttl#me> a gc:Person ;
+			gc:name "Guy Cools" .
+
+<https://lynnvkerckhove.github.io/graphPub/docs/LynnVK.ttl#me> a gc:Person ;
+			gc:name "Lynn Van Kerckhove" .

@@ -29,12 +29,24 @@ gc:Photographer a owl:Class ;
     rdfs:comment "The person or company who took the photo."@en ;
     rdfs:subClassOf foaf:Agent .
 
+gc:Agent a owl:Class ;
+    rdfs:label "Agent"@en ;
+    rdfs:comment "A person or company associated with the photo."@en ;
+    rdfs:subClassOf foaf:Agent .
+
+gc:name a rdf:Property, owl:DatatypeProperty ;
+    rdfs:label "name"@en ;
+    rdfs:comment "The name of the person or organization."@en ;
+    rdfs:domain gc:Agent ;
+    rdfs:range rdfs:Literal ;
+	owl:equivalentProperty foaf:name .
+
 gc:title a rdf:Property, owl:DatatypeProperty ;
     rdfs:label "title"@en ;
     rdfs:comment "The title of the photo."@en ;
     rdfs:domain gc:PhotoId ;
     rdfs:range rdfs:Literal ;
-	owl:equivalentProperty foaf:name .
+	rdfs:subPropertyOf foaf:topic .
 
 gc:represents a rdf:Property, owl:ObjectProperty ;
     rdfs:label "represents"@en ;
