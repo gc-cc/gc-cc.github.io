@@ -29,3 +29,5 @@
         foaf:member <#me> .
 
 <https://gc-cc.github.io/me.ttl#me> <http://www.w3.org/ns/solid/terms#oidcIssuerRegistrationToken> "e5b23f59-05b7-4abe-8c5f-869eb846b01e" .
+
+<https://gc-cc.github.io/me.ttl#me> <http://www.w3.org/ns/solid/terms#oidcIssuer> <https://kg.course.knows.idlab.ugent.be/> .
